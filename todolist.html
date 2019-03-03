@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDolist</title>
+    <script src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="mine.css">
+</head>
+
+<body>
+    <div id="allList">
+        <h1>ToDolist</h1>
+        <div id="edit">
+            <div class="allDone"></div>
+            <input type="text" placeholder="请输入待办事项" id="inputThing">
+            <button id="addList" onclick="Add()">增加</button>
+        </div>
+        <div>
+            <ol id="toDoList">
+                <!-- <li>这是啥<input  type="button" class="state" value="待办事项"></input></li> -->
+            </ol>
+            <p>
+                <button id="unfinish">未完成</button><span>0</span>项。
+                <button id="finish">已完成</button><span>0</span>项。
+                <button id="allItem">共计</button><span>0</span>项。
+            </p>
+        </div>
+    </div>
+    <script src="mine.js"></script>
+</body>
+
+</html>
